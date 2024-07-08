@@ -27,6 +27,8 @@ jobs:
         run: |
           echo LC_ALL=%LC_ALL%
           echo LANG=%LANG%
+          set
+
 
       - name: kwinject
         run: kwinject make
