@@ -23,12 +23,8 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
 
-      - name: Check environment variables
-        run: |
-          echo LC_ALL=%LC_ALL%
-          echo LANG=%LANG%
-          set
-
+      - name: Kwauth
+        run: kwauth --url http://172.20.73.102:8080
 
       - name: kwinject
         run: kwinject make
